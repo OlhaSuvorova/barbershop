@@ -5,40 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Барбершоп в Києві</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header></header>
+    <header class="page-header">
+      <nav class="page-navigation">
+        <a class="logo" href="./index.html"
+          ><img src="./images/logo.svg" alt="логотип" width="68" height="56"
+        /></a>
+        <ul class="list">
+          <li><a class="link" href="#about">Про нас</a></li>
+          <li><a class="link" href="#services">Послуги та ціни</a></li>
+          <li><a class="link" href="#our-team">Майстри</a></li>
+          <li><a class="link" href="#contacts">Контакти</a></li>
+        </ul>
+      </nav>
+      <a class="link" href="tel:+380441111111">+38 044 111 11 11</a>
+      <a class="link" href="">онлайн-запис</a>
+    </header>
     <main>
-      <section>
-        <nav>
-          <a href="./index.html"
-            ><img src="./images/logo.svg" alt="логотип" width="68" height="56"
-          /></a>
-          <ul>
-            <li><a href="">Про нас</a></li>
-            <li><a href="">Послуги та ціни</a></li>
-            <li><a href="">Майстри</a></li>
-            <li><a href="">Контакти</a></li>
-          </ul>
-        </nav>
-        <a href="tel:+380441111111">+38 044 111 11 11</a>
-        <a href="">онлайн-запис</a>
-      </section>
-      <section>
-        <div>
-          <ul>
-            <li><a href="" lang="en">Instagram</a></li>
-            <li><a href="" lang="en">Youtube</a></li>
-          </ul>
-        </div>
-        <div>
-          <p lang="en">A hair salon for men in Kyiv</p>
-          <h1 lang="en">BarberShop</h1>
-          <p>Ми експерти у модних чоловічих стрижках. Працюємо швидко, обережно та зі смаком.</p>
-        </div>
-      </section>
-      <section>
-        <ul>
+      <div>
+        <ul class="list">
+          <li><a class="link" href="" lang="en">Instagram</a></li>
+          <li><a class="link" href="" lang="en">Youtube</a></li>
+        </ul>
+      </div>
+      <div>
+        <p lang="en">A hair salon for men in Kyiv</p>
+        <h1 lang="en">BarberShop</h1>
+        <p>Ми експерти у модних чоловічих стрижках. Працюємо швидко, обережно та зі смаком.</p>
+      </div>
+
+      <section id="about">
+        <ul class="list">
           <li>
             <img
               src="./images/about/img-1.jpg"
@@ -65,9 +70,9 @@
           клієнтами "на одній хвилі". Тому ми завжди готові вдосконалити кожного, хто до нас
           приходить!
         </p>
-        <a href="">онлайн-запис</a>
+        <a class="link" href="">онлайн-запис</a>
       </section>
-      <section>
+      <section id="services">
         <p>Проведи час у компанії кращих майстрів</p>
         <h2>Послуги та ціни</h2>
 
@@ -118,7 +123,7 @@
       </section>
       <section>
         <div>
-          <ul>
+          <ul class="list">
             <li>
               <p>600</p>
               <p>Задоволених клієнтів на день</p>
@@ -145,10 +150,10 @@
           </p>
         </div>
       </section>
-      <section>
+      <section id="our-team">
         <p>для справжніх шанувальників атмосфери</p>
         <h2>Наші майстри</h2>
-        <ul>
+        <ul class="list">
           <li>
             <img
               src="./images/our-team/john-smith.jpg"
@@ -183,7 +188,7 @@
       </section>
       <section>
         <p>Латинською мовою "барба" означає "борода"</p>
-        <ul>
+        <ul class="list">
           <li>
             <img
               src="./images/gallery/gallery-img-1.jpg"
@@ -218,38 +223,40 @@
           </li>
         </ul>
       </section>
-      <div>
+      <div id="contacts">
         <section>
           <h2>Онлайн-запис</h2>
+          <button type="button">Надіслати</button>
+        </section>
+        <section>
+          <h2>Контакти</h2>
+          <address>
+            <ul class="list">
+              <li>
+                <a
+                  class="link"
+                  href="https://goo.gl/maps/kRMGKvgfGUGarT6E9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >вул. Василькова, 7А Київ, 08132</a
+                >
+              </li>
+              <li><a class="link" href="tel:+380441111111">+38 044 111 11 11</a></li>
+              <li>
+                <a class="link" href="mailto:barbershop@email.com">barbershop@email.com</a>
+              </li>
+            </ul>
+          </address>
+          <h3>Години роботи</h3>
+          <p>Щоденно з 9:00 до 22:00</p>
         </section>
       </div>
-      <section>
-        <h2>Контакти</h2>
-        <address>
-          <ul>
-            <li>
-              <a
-                href="https://goo.gl/maps/kRMGKvgfGUGarT6E9"
-                target="_blank"
-                rel="noopener noreferrer"
-                >вул. Василькова, 7А Київ, 08132</a
-              >
-            </li>
-            <li><a href="tel:+380441111111">+38 044 111 11 11</a></li>
-            <li>
-              <a href="mailto:barbershop@email.com">barbershop@email.com</a>
-            </li>
-          </ul>
-        </address>
-        <h3>Години роботи</h3>
-        <p>Щоденно з 9:00 до 22:00</p>
-      </section>
     </main>
     <footer>
       <p>&copy; Copyright 2020</p>
-      <ul>
-        <li><a href=""></a>Instagram</li>
-        <li><a href=""></a>Youtube</li>
+      <ul class="list">
+        <li><a class="link" href=""></a>Instagram</li>
+        <li><a class="link" href=""></a>Youtube</li>
       </ul>
     </footer>
   </body>
