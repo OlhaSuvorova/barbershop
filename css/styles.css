@@ -1,3 +1,7 @@
+:root {
+  --accent-color: #ff6c00;
+}
+
 .list {
   list-style: none;
 }
@@ -7,7 +11,12 @@
 }
 
 button {
+  font-family: inherit;
   cursor: pointer;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
 }
 
 .menu-link {
@@ -17,4 +26,47 @@ button {
   letter-spacing: 0.1em;
 
   /* color: #ffffff; */
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--accent-color);
+}
+
+.contact-tel {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+
+  /* color: #FFFFFF; */
+}
+
+.contact-tel:hover,
+.contact-tel:focus {
+  color: var(--accent-color);
+}
+
+.subscribe-btn {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+}
+
+.subscribe-btn-theme-dark {
+  color: #303030;
+}
+
+.subscribe-btn-theme-light {
+  color: #ffffff;
+}
+
+.subscribe-btn:hover,
+.contact-tel:focus {
+  background-color: var(--accent-color);
 }
