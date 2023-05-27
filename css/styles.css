@@ -1,4 +1,10 @@
 :root {
+  --main-font-family: 'Open Sans' sans-serif;
+  --secondary-font-family: 'Raleway' sans-serif;
+  --primary-text-color-theme-dark: #ffffff;
+  --primary-text-color-theme-light: #303030;
+  --secondary-text-color-theme-dark: #9da4bd;
+  --secondary-text-color-theme-light: #555555;
   --accent-color: #ff6c00;
 }
 
@@ -16,7 +22,7 @@ button {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: var(--main-font-family);
 }
 
 .menu-link {
@@ -58,6 +64,11 @@ body {
   border-radius: 25px;
 }
 
+.subscribe-btn:hover,
+.contact-tel:focus {
+  background-color: var(--accent-color);
+}
+
 .subscribe-btn-theme-dark {
   color: #303030;
 }
@@ -66,7 +77,58 @@ body {
   color: #ffffff;
 }
 
-.subscribe-btn:hover,
-.contact-tel:focus {
-  background-color: var(--accent-color);
+/* =====================================HERO=============== */
+
+.media-list-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+
+  color: var(--primary-text-color-theme-light);
+}
+
+.media-list-link:hover,
+.media-list-link:focus {
+  color: var(--accent-color);
+}
+
+.subtitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.subtitle-theme-dark {
+  color: var(--secondary-text-color-theme-dark);
+}
+
+.subtitle-theme-light {
+  color: var(--primary-text-color-theme-light);
+}
+
+.main-title {
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+
+  color: var(--primary-text-color-theme-dark);
+}
+
+.section-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}
+
+.section-description-theme-dark {
+  color: var(--secondary-text-color-theme-dark);
+}
+
+.section-description-theme-light {
+  color: var(--secondary-text-color-theme-light);
 }
