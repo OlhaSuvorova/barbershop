@@ -110,6 +110,7 @@ body {
 }
 
 .main-title {
+  font-family: var(--secondary-font-family);
   font-weight: 700;
   font-size: 72px;
   line-height: 1.18;
@@ -131,4 +132,123 @@ body {
 
 .section-description-theme-light {
   color: var(--secondary-text-color-theme-light);
+}
+
+/* =========================About=================== */
+
+.title {
+  font-family: var(--secondary-font-family);
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+}
+
+.title-theme-light {
+  color: var(--primary-text-color-theme-light);
+}
+
+.title-theme-dark {
+  color: var(--primary-text-color-theme-dark);
+}
+
+.about-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color-theme-light);
+}
+
+.services-table-name,
+.services-table-price {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+
+  color: var(--secondary-text-color-theme-dark);
+}
+
+.advantages-list-quantity {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.35;
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: var(--primary-text-color-theme-light);
+}
+
+.advantages-list-description {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-align: center;
+
+  color: var(--primary-text-color-theme-light);
+}
+
+/* =========================EMPLOYEES================= */
+
+.employees-list-name {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.39;
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: var(--primary-text-color-theme-light);
+}
+
+.employees-list-position {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: var(--accent-color);
+}
+
+/* =============================Gallery========================== */
+
+/* =============================CONTACT INFO================= */
+
+.contact-list-link {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+
+  color: var(--secondary-text-color-theme-dark);
+}
+
+.contact-list-link:hover,
+.contact-list-link:focus {
+  color: var(--accent-color);
+}
+
+.subtitle-contact-dark {
+  color: var(--primary-text-color-theme-dark);
+}
+
+.contact-info-date {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+
+  color: var(--secondary-text-color-theme-dark);
+}
+
+/* ===============================FOOTER================= */
+
+.copyright {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+
+  color: var(--secondary-text-color-theme-dark);
 }
