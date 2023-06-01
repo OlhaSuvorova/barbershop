@@ -14,8 +14,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
+
   <body>
     <header class="page-header">
+      <div class="container page-header-container">
       <nav class="page-navigation">
         <a class="logo" href="./index.html"
           ><img class="logo-img" src="./images/logo.svg" alt="логотип" width="68" height="56"
@@ -36,12 +38,16 @@
         </ul>
       </nav>
       <a class="contact-tel link" href="tel:+380441111111">+38 044 111 11 11</a>
-      <a class="subscribe-btn subscribe-btn-theme-light link" href="#subscribe">онлайн-запис</a>
+     <button class="modal-open-btn modal-open-btn-theme-dark" type="button">онлайн-запис</button>
+
+      <!-- <a class="subscribe-btn subscribe-btn-theme-light link" href="#subscribe">онлайн-запис</a> -->
+    </div>
     </header>
     <main>
       <!-- ==========================HERO===================================== -->
 
       <section class="hero">
+        <div class="container">
         <div class="hero-left-side">
           <ul class="media-list list">
             <li class="media-list-item">
@@ -55,15 +61,17 @@
         <div class="hero-right-side">
           <p class="subtitle subtitle-theme-dark" lang="en">A hair salon for men in Kyiv</p>
           <h1 class="main-title" lang="en">BarberShop</h1>
-          <p class="section-description section-description-theme-dark">
+          <p class="section-description section-description-theme-dark hero-description">
             Ми експерти у модних чоловічих стрижках. Працюємо швидко, обережно та зі смаком.
           </p>
+        </div>
         </div>
       </section>
 
 <!-- ========================================About=========================== -->
 
-      <section class="about" id="about">
+      <section class="about section" id="about">
+        <div class="container section-about-position">
         <div class="about-left-side">
           <ul class="about-gallery list">
             <li class="about-gallery-item">
@@ -87,24 +95,30 @@
         <div class="about-right-side">
         <h2 class="subtitle subtitle-theme-light">ПРО НАС</h2>
         <h3 class="title title-theme-light">Найкращий Барбершоп твого міста</h3>
-        <p class="section-description section-description-theme-light">Якщо ти хочеш додати у свій образ більше впевненості, тобі точно до нас.</p>
+        <div class="about-box">
+        <p class="section-description about-description section-description-theme-light">Якщо ти хочеш додати у свій образ більше впевненості, тобі точно до нас.</p>
         <p class="about-text">
-          Ми команда, яка ніколи не зупиняється на досягнутому і прагне змін. І коли ти потрапиш до
-          рук нашого майстра, то вже ніколи не зможеш бути тим самим. Ми команда, яка завжди з
-          клієнтами "на одній хвилі". Тому ми завжди готові вдосконалити кожного, хто до нас
+          Ми команда, яка ніколи не зупиняється на досягнутому <br> і прагне змін. І коли ти потрапиш до
+          рук нашого майстра, <br>то вже ніколи не зможеш бути тим самим. Ми команда, яка завжди з
+          клієнтами "на одній хвилі". Тому ми завжди готові вдосконалити<br> кожного, хто до нас
           приходить!
         </p>
-        <a class="subscribe-btn subscribe-btn-theme-dark link" href="">онлайн-запис</a>
+        </div>
+        <button class="modal-open-btn modal-open-btn-theme-light" type="button">онлайн-запис</button>
+        <!-- <a class="subscribe-btn subscribe-btn-theme-dark link" href="">онлайн-запис</a> -->
+        </div>
+        </div>
       </section>
-      </div>
+      
 
         <!-- ==========================Services============================= -->
 
-      <section id="services">
+      <section id="services section">
+        <div class="container">
         <p class="subtitle subtitle-theme-dark">Проведи час у компанії кращих майстрів</p>
         <h2 class="title title-theme-dark">Послуги та ціни</h2>
 
-        <!-- ==============================TABLE============================ -->
+        <!-- --------------------------TABLE------------------------= -->
 
       <table class="services-table list">
           <tr class="services-table-row">
@@ -142,15 +156,18 @@
             <td class="services-table-price">від 200 грн.</td>
           </tr>
         </table>
+        <button class="modal-open-btn modal-open-btn-theme-dark btn-position" type="button">онлайн-запис</button>
 
-        <a class="subscribe-btn subscribe-btn-theme-light link" href="">онлайн-запис</a>
+        <!-- <a class="subscribe-btn subscribe-btn-theme-light link" href="">онлайн-запис</a> -->
+        </div>
       </section>
 
-    <!-- ==================================ADVANTAGES========================= -->
+    <!-- ==================================ADVANTAGES==================================== -->
 
-      <section class="advantages">
+      <section class="advantages section">
+        <div class="container section-advantages-position">
         <div class="advantages-left-side">
-          <ul class="advantages-list list">
+          <ul class="advantages-list advantages-list-position list">
             <li class="advantages-list-item">
               <p class="advantages-list-quantity">600</p>
               <p class="advantages-list-description">Задоволених клієнтів на день</p>
@@ -171,18 +188,20 @@
         </div>
         <div class="advantages-right-side">
           <p class="subtitle subtitle-theme-light">стара традиційна школа</p>
-          <h2 class="title title-theme-light">Чому приходять саме до нас?</h2>
-          <p class="section-description section-description-theme-light">
+          <h2 class="title title-theme-light advantages-title-size">Чому приходять саме до нас?</h2>
+          <p class="section-description section-description-theme-light advantages-description-size">
             Про нас говорять лише добре. Але краще 1 раз побачити і відчути, ніж 10 разів прочитати.
           </p>
+        </div>
         </div>
       </section>
 
 <!-- ======================================EMPLOYEES========================== -->
 
-      <section class="employees" id="our-team">
+      <section class="employees section" id="our-team">
+        <div class="container">
         <p class="subtitle subtitle-theme-light">для справжніх шанувальників атмосфери</p>
-        <h2 class="title title-theme-light">Наші майстри</h2>
+        <h2 class="title employees-title">Наші майстри</h2>
         <ul class="employees-list list">
           <li class="employees-list-item">
             <img class="employees-list-img"
@@ -191,8 +210,10 @@
               width="370"
               height="346"
             />
+            <div class="employees-list-text-content">
             <h3 class="employees-list-name" lang="en">John Smith</h3>
             <p class="employees-list-position" lang="en">Extreme Barber</p>
+          </div>
           </li>
           <li class="employees-list-item">
             <img class="employees-list-img"
@@ -201,8 +222,10 @@
               width="370"
               height="346"
             />
+            <div class="employees-list-text-content">
             <h3 class="employees-list-name" lang="en">Michele Doe</h3>
             <p class="employees-list-position" lang="en">Extreme Barber</p>
+          </div>
           </li>
           <li class="employees-list-item">
             <img class="employees-list-img"
@@ -211,16 +234,20 @@
               width="370"
               height="346"
             />
+            <div class="employees-list-text-content">
             <h3 class="employees-list-name" lang="en">Alan Black</h3>
             <p class="employees-list-position" lang="en">Extreme Barber</p>
+          </div>
           </li>
         </ul>
+        </div>
       </section>
 
 <!-- =====================================Gallery================================= -->
 
-      <section class="gallery">
-        <p class="subtitle subtitle-theme-light">Латинською мовою "барба" означає "борода"</p>
+      <section class="gallery section">
+        <div class="container">
+        <p class="subtitle gallery-subtitle subtitle-theme-light">Латинською мовою "барба" означає "борода"</p>
         <h2 hidden>Галерея робіт</h2>  
         <ul class="gallery-list list">
           <li class="gallery-list-item">
@@ -256,21 +283,25 @@
             />
           </li>
         </ul>
+        </div>
       </section>
 
-      <div id="contacts">
+      <!-- ============================CONTACT FORM============================== -->
 
-         <!-- ============================CONTACT FORM============================== -->
+      <div id="contacts">
         
          <section class="contact-form-section" id="subscribe">
+          <div class="container">
           
           <h2 class="title title-theme-dark">Онлайн-запис</h2>
           <button type="button">Надіслати</button>
+          </div>
         </section>
         
         <!-- ==========================CONTACT INFORMATION===================== -->
 
           <section class="contact-info-section">
+            <div class="container">
           <h2 class="title title-theme-dark">Контакти</h2>
           <address>
             <ul class="contact-list list">
@@ -294,10 +325,12 @@
           </address>
           <h3 class="subtitle subtitle-contact-dark">Години роботи</h3>
           <p class="contact-info-date">Щоденно з 9:00 до 22:00</p>
+          </div>
         </section>
       </div>
     </main>
     <footerr class="footer">
+      <div class="container">
       <p class="copyright">&#xa9; Copyright 2020</p>
       <ul class="media-list list">
             <li class="media-list-item">
@@ -307,6 +340,7 @@
               <a class="media-list-link link" href="" lang="en">Youtube</a>
             </li>
           </ul>
+          </div>
     </footer>
   </body>
 </html>
