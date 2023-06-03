@@ -237,7 +237,7 @@ body {
 .hero {
   background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
     url(../images/header/slider-header.jpg);
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
   background-size: cover;
 }
 
@@ -329,6 +329,12 @@ body {
   letter-spacing: 0.02em;
   margin-bottom: 42px;
   color: var(--secondary-text-color-theme-light);
+}
+
+/* ===================================TABLE==================== */
+
+.services-table-wrapper {
+  display: flex;
 }
 
 .services-table-name,
