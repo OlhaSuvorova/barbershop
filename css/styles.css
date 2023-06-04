@@ -251,13 +251,13 @@ body {
   
 } */
 
-.hero-media-list {
+.media-list {
   display: flex;
   align-items: center;
   column-gap: 40px;
 }
 
-.hero-media-list::before {
+.media-list::before {
   content: '';
   width: 60px;
   height: 1px;
@@ -578,7 +578,7 @@ body {
   background-color: var(--secondary-bg-color);
 }
 
-.footer-position {
+.footer-container {
   display: flex;
   align-items: center;
 }
@@ -592,9 +592,9 @@ body {
   color: var(--secondary-text-color-theme-dark);
 }
 
-.media-list-footer {
+/* .media-list-footer {
   display: flex;
   align-items: center;
   margin-left: auto;
   column-gap: 40px;
-}
+} */
