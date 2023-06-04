@@ -22,9 +22,11 @@
     <header class="page-header">
       <div class="container page-header-container">
         <nav class="page-navigation">
-          <a class="logo" href="./index.html"
-            ><img class="logo-img" src="./images/logo.svg" alt="логотип" width="68" height="56"
-          /></a>
+          <a class="logo" href="./index.html">
+            <svg class="logo-img" width="68" height="56" aria-label="логотип барбершопа">
+              <use href="./images/icons.svg#icon-logo"></use>
+            </svg>
+            
           <ul class="menu list">
             <li class="menu-item">
               <a class="menu-link link" href="#about">Про нас</a>
@@ -147,7 +149,7 @@
                 <td class="services-table-price">від 200 грн.</td>
               </tr>
             </table>
-            <table class="services-table list">
+            <table class="services-table right-table-services list">
               <tr class="services-table-row">
                 <td class="services-table-name">Стрижка у стажера</td>
                 <td class="services-table-price">від 50 грн.</td>
@@ -166,9 +168,7 @@
               </tr>
             </table>
           </div>
-          <button class="modal-open-btn modal-open-btn-theme-dark btn-position" type="button">
-            онлайн-запис
-          </button>
+          <button class="modal-open-btn modal-open-btn-theme-dark services-modal-open-btn" type="button">онлайн-запис</button>
 
           <!-- <a class="subscribe-btn subscribe-btn-theme-light link" href="">онлайн-запис</a> -->
         </div>
@@ -227,8 +227,62 @@
               <div class="employees-list-text-content">
                 <h3 class="employees-list-name" lang="en">John Smith</h3>
                 <p class="employees-list-position" lang="en">Extreme Barber</p>
+                <ul class="social-list list">
+                  <li class="social-list-item">
+                    <a href="" class="social-list-link">
+                    <svg 
+                    class="social-list-icon" 
+                    aria-label="іконка інстаграму" 
+                    width="20" 
+                    height="20"
+                    >
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                    </a>
+                  </li>
+                  <li class="social-list-item">
+                    <a href="" class="social-list-link">
+                    <svg 
+                    class="social-list-icon" 
+                    width="20" 
+                    height="20" 
+                    aria-label="іконка твіттера">
+                    <use 
+                    href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+                  <li class="social-list-item">
+                    <a 
+                    href="" class="social-list-link">
+                    <svg 
+                    class="social-list-icon" 
+                    width="20" 
+                    height="20" 
+                    aria-label="іконка фейсбука">
+                    <use 
+                    href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+                  <li class="social-list-item">
+                    <a 
+                    href="" class="social-list-link">
+                    <svg
+                    class="social-list-icon"
+                    width="20"
+                    height="20"
+                    ari-label="іконка лінкедина">
+                    <use
+                     href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+                </ul>
               </div>
+              
             </li>
+            
             <li class="employees-list-item">
               <img
                 class="employees-list-img"
@@ -240,6 +294,58 @@
               <div class="employees-list-text-content">
                 <h3 class="employees-list-name" lang="en">Michele Doe</h3>
                 <p class="employees-list-position" lang="en">Extreme Barber</p>
+                <ul class="social-list list">
+                  <li class="social-list-item">
+                    <a href="" class="social-list-link">
+                    <svg 
+                    class="social-list-icon" 
+                    aria-label="іконка інстаграму" 
+                    width="20" 
+                    height="20"
+                    >
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                    </a>
+                  </li>
+                  <li class="social-list-item">
+                    <a href="" class="social-list-link">
+                    <svg 
+                    class="social-list-icon" 
+                    width="20" 
+                    height="20" 
+                    aria-label="іконка твіттера">
+                    <use 
+                    href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+                  <li class="social-list-item">
+                    <a 
+                    href="" class="social-list-link">
+                    <svg 
+                    class="social-list-icon" 
+                    width="20" 
+                    height="20" 
+                    aria-label="іконка фейсбука">
+                    <use 
+                    href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+                  <li class="social-list-item">
+                    <a 
+                    href="" class="social-list-link">
+                    <svg
+                    class="social-list-icon"
+                    width="20"
+                    height="20"
+                    ari-label="іконка лінкедина">
+                    <use
+                     href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+                </ul>                
               </div>
             </li>
             <li class="employees-list-item">
@@ -253,6 +359,58 @@
               <div class="employees-list-text-content">
                 <h3 class="employees-list-name" lang="en">Alan Black</h3>
                 <p class="employees-list-position" lang="en">Extreme Barber</p>
+                <ul class="social-list list">
+                  <li class="social-list-item">
+                    <a href="" class="social-list-link">
+                    <svg 
+                    class="social-list-icon" 
+                    aria-label="іконка інстаграму" 
+                    width="20" 
+                    height="20"
+                    >
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                    </a>
+                  </li>
+                  <li class="social-list-item">
+                    <a href="" class="social-list-link">
+                    <svg 
+                    class="social-list-icon" 
+                    width="20" 
+                    height="20" 
+                    aria-label="іконка твіттера">
+                    <use 
+                    href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+                  <li class="social-list-item">
+                    <a 
+                    href="" class="social-list-link">
+                    <svg 
+                    class="social-list-icon" 
+                    width="20" 
+                    height="20" 
+                    aria-label="іконка фейсбука">
+                    <use 
+                    href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+                  <li class="social-list-item">
+                    <a 
+                    href="" class="social-list-link">
+                    <svg
+                    class="social-list-icon"
+                    width="20"
+                    height="20"
+                    ari-label="іконка лінкедина">
+                    <use
+                     href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+                </ul>
               </div>
             </li>
           </ul>
