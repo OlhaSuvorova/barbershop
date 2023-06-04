@@ -255,6 +255,7 @@ body {
   display: flex;
   align-items: center;
   column-gap: 40px;
+  /* transform: rotate(-90deg); */
 }
 
 .media-list::before {
