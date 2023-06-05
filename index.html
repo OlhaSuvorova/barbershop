@@ -43,7 +43,7 @@
           </ul>
         </nav>
         <a class="contact-tel link" href="tel:+380441111111">+38 044 111 11 11</a>
-        <button class="modal-open-btn modal-open-btn-theme-dark" type="button">онлайн-запис</button>
+        <button class="modal-open-btn modal-open-btn-theme-dark" type="button" data-modal-open>онлайн-запис</button>
 
         <!-- <a class="subscribe-btn subscribe-btn-theme-light link" href="#subscribe">онлайн-запис</a> -->
       </div>
@@ -272,7 +272,7 @@
                     class="social-list-icon"
                     width="20"
                     height="20"
-                    ari-label="іконка лінкедина">
+                    aria-label="іконка лінкедина">
                     <use
                      href="./images/icons.svg#icon-linkedin"></use>
                   </svg>
@@ -468,8 +468,11 @@
 
       <!-- ============================CONTACT FORM============================== -->
 
-      <div id="contacts">
-        <section class="contact-form-section section" id="subscribe">
+
+
+      <div class="contact-sections-wrapper section" id="contacts">
+        <div class="container contact-sections-wrapper-container">
+        <section class="contact-form-section" id="subscribe">
           <!-- <div class="container section-contact-position"> -->
            <!-- <div class="contact-form"> -->
               <h2 class="title title-theme-dark">Онлайн-запис</h2>
@@ -480,7 +483,7 @@
         <section class="contact-info-section">
          <!-- <div class="contact-form-list"> -->
               <h2 class="title title-theme-dark">Контакти</h2>
-              <address>
+              <address class="contact-info-address">
                 <ul class="contact-list list">
                   <li class="contact-list-item">
                     <a
@@ -488,14 +491,25 @@
                       href="https://goo.gl/maps/kRMGKvgfGUGarT6E9"
                       target="_blank"
                       rel="noopener noreferrer"
-                      >вул. Василькова, 7А Київ, 08132</a
-                    >
+                      >
+                      <svg class="contact-list-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-map-pin"></use>
+                    </svg>
+                    вул. Василькова, 7А Київ, 08132</a
+                    >                                     
                   </li>
                   <li class="contact-list-item">
-                    <a class="contact-list-link link" href="tel:+380441111111">+38 044 111 11 11</a>
+                    <a class="contact-list-link link" href="tel:+380441111111">
+                      <svg class="contact-list-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-phone"></use>
+                      </svg>
+                      +38 044 111 11 11</a>
                   </li>
                   <li class="contact-list-item">
                     <a class="contact-list-link link" href="mailto:barbershop@email.com">
+                      <svg class="contact-list-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-map-pin"></use>
+                      </svg>
                       barbershop@email.com</a
                     >
                   </li>
@@ -506,6 +520,7 @@
             <!-- </div> -->
           <!-- </div> -->
         </section>
+        </div>
       </div>
     </main>
 
@@ -524,5 +539,15 @@
         </ul>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-btn" data-modal-close>
+          <svg class="modal-close-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
